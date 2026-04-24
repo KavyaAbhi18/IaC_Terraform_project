@@ -15,7 +15,7 @@ resource "aws_s3_bucket" "my_bucket" {
 
 # Create EC2 instance
 resource "aws_instance" "demo_ec2" {
-  ami = "ami-0fc5d935ebf8bc3bc"
+  ami = "ami-09dbc7ce74870d573"
   instance_type = var.ec2_instance_type
   key_name      = "Linux_demo"
   user_data = file("${path.module}/scripts_file/tools.sh")
